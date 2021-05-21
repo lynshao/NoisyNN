@@ -7,11 +7,18 @@ This repository is the official implementation of paper [Denoising Noisy Neural 
 
 ## Requirements
 
-Experiments were conducted using Python 3.8.5. To install requirements:
+Experiments were conducted on Python 3.8.5. To install requirements:
 
 ```setup
 pip install -r requirements.txt
 ```
+
+## Noisy Inference
+
+For noisy inference, we tried three neural network (NN) architectures (ResNet34, ResNet18, and ShuffleNet V2) on the CIFAR-10 dataset and one NN architecture (BERT) on the SST-2 dataset. To run the code, please first download the pretrained models at https://zenodo.org/record/4778688#.YKe8dKgzaUk
+
+
+
 
 ## Training
 
@@ -35,7 +42,7 @@ python eval.py --model-file mymodel.pth --benchmark imagenet
 
 ## Pre-trained Models
 
-You can download pretrained models here:
+You can download pretrained models here:  
 
 - [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
 
