@@ -32,6 +32,16 @@ python Main.py --EsN0dB <snr you want to try>
 python Main.py --EsN0dB <snr you want to try> --arch <NN model you want to try: 'resnet34', 'resnet18', or 'shufflenet'>
 ```
 
+# Reproduce our results
+
+The source code and data to reproduce our results in Fig.3 are available in the folder 'Reproduce_inference'. Enter the folder and run
+
+```train
+python plot_figures.py --arch <NN model you want to try: 'resnet34', 'resnet18', or 'shufflenet'>
+e.g.,
+python plot_figures.py --arch resnet34
+
+```
 
 ## Training
 
