@@ -23,18 +23,17 @@ For noisy inference, we tried three neural network (NN) architectures (ResNet34,
 
 3. Run the following
 
-/InferenceNoise_CIFAR10:
+> /InferenceNoise_CIFAR10:
 ```train
 python Main.py --EsN0dB <snr you want to try> --arch <NN model you want to try: resnet34, resnet18, or shufflenet>
 ```
 
-/InferenceNoise_SST2:
+> /InferenceNoise_SST2:
 ```train
 python Main.py --EsN0dB <snr you want to try>
 ```
 
-
-# Reproduce our results
+## Reproduce our results
 
 The source code and data to reproduce our results in Fig.3 are available in the folder 'Reproduce_inference'.
 
@@ -47,9 +46,9 @@ python plot_figures.py --arch <NN model you want to try: resnet34, resnet18, shu
 > e.g., python plot_figures.py --arch bert
 
 
-## Training
+## Noisy Training
 
-To train the model(s) in the paper, run this command:
+For noisy training, we tried two lightweight NN models (ResNet18 and ShuffleNet V2) on the CIFAR-10 dataset. To run the code, 
 
 ```train
 python train.py --input-data <path_to_data> --alpha 10 --beta 20
@@ -67,15 +66,11 @@ python eval.py --model-file mymodel.pth --benchmark imagenet
 
 >📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
 
-## Pre-trained Models
 
-You can download pretrained models here:  
-
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
-
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
 
 ## Results
+
+<!-- ![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg) -->
 
 Our model achieves the following performance on :
 
