@@ -33,6 +33,17 @@ python Main.py --EsN0dB <snr you want to try> --arch <NN model you want to try: 
 python Main.py --EsN0dB <snr you want to try>
 ```
 
+
+## Noisy Training
+
+For noisy training, we tried two lightweight NN models (ResNet18 and ShuffleNet V2) on the CIFAR-10 dataset. To run the code, 
+
+```train
+python train.py --input-data <path_to_data> --alpha 10 --beta 20
+```
+
+
+
 ## Reproduce our results
 
 The source code and data to reproduce our results in Fig.3 are available in the folder 'Reproduce_inference'.
@@ -45,34 +56,11 @@ python plot_figures.py --arch <NN model you want to try: resnet34, resnet18, shu
 ```
 > e.g., python plot_figures.py --arch bert
 
-
-## Noisy Training
-
-For noisy training, we tried two lightweight NN models (ResNet18 and ShuffleNet V2) on the CIFAR-10 dataset. To run the code, 
-
-```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
-```
-
->📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
-
-## Evaluation
-
-To evaluate my model on ImageNet, run:
-
-```eval
-python eval.py --model-file mymodel.pth --benchmark imagenet
-```
-
->📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
-
-
-
-## Results
-
 <img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3a.png" width="450" alt="Fig3a"/>
+<img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3b.png" width="450" alt="Fig3b"/>
+<img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3c.png" width="450" alt="Fig3c"/>
+<img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3d.png" width="450" alt="Fig3d"/>
 
-![image](https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3a.png)
 
 Our model achieves the following performance on :
 
