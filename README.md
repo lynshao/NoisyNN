@@ -52,9 +52,11 @@ Enter the folder and run
 
 ```train
 python plot_figures.py --arch <NN model you want to try: resnet34, resnet18, shufflenet, or bert>
-
 ```
-> e.g., python plot_figures.py --arch bert
+> e.g.,
+```train
+python plot_figures.py --arch bert
+```
 
 <!-- <img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3a.png" width="450" alt="Fig3a"/>
 <img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3b.png" width="450" alt="Fig3b"/>
