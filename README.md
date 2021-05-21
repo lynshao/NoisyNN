@@ -1,20 +1,13 @@
 # Denoising Noisy Neural Networks: A Bayesian Approach with Compensation
 
-This repository is the official implementation of [Denoising Noisy Neural Networks: A Bayesian Approach with Compensation].
+This repository is the official implementation of paper [Denoising Noisy Neural Networks: A Bayesian Approach with Compensation].
 <!-- (add arXiv link) -->
 
 <!-- >📋  Optional: If you find this repository useful, pls cite as include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials -->
 
 ## Requirements
 
-Here are my 
-Python 3.8.5
-PyTorch 1.8.1
-numpy
-scipy
-
-
-To install requirements:
+Experiments were conducted using Python 3.8.5. To install requirements:
 
 ```setup
 pip install -r requirements.txt
