@@ -46,7 +46,7 @@ python train.py --input-data <path_to_data> --alpha 10 --beta 20
 
 ## Reproduce our results
 
-The source code and data to reproduce our results in Fig.3 are available in the folder 'Reproduce_inference'.
+The source codes and data to reproduce our results in Fig.3 (noisy inference) are available in the folder 'Reproduce_inference'.
 
 Enter the folder and run
 
@@ -56,21 +56,12 @@ python plot_figures.py --arch <NN model you want to try: resnet34, resnet18, shu
 ```
 > e.g., python plot_figures.py --arch bert
 
-<img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3a.png" width="450" alt="Fig3a"/>
+<!-- <img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3a.png" width="450" alt="Fig3a"/>
 <img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3b.png" width="450" alt="Fig3b"/>
 <img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3c.png" width="450" alt="Fig3c"/>
-<img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3d.png" width="450" alt="Fig3d"/>
+<img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3d.png" width="450" alt="Fig3d"/> -->
 
-
-Our model achieves the following performance on :
-
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
-
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
-
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
+The source codes and data to reproduce our results in Fig.4 (noisy training) are available in the folder 'Reproduce_inference'.
 
 
 ## Contributing
