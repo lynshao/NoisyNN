@@ -15,9 +15,22 @@ pip install -r requirements.txt
 
 ## Noisy Inference
 
-For noisy inference, we tried three neural network (NN) architectures (ResNet34, ResNet18, and ShuffleNet V2) on the CIFAR-10 dataset and one NN architecture (BERT) on the SST-2 dataset. To run the code, please first download the pretrained models at https://zenodo.org/record/4778688#.YKe8dKgzaUk
+For noisy inference, we tried three neural network (NN) architectures (ResNet34, ResNet18, and ShuffleNet V2) on the CIFAR-10 dataset and one NN architecture (BERT) on the SST-2 dataset. To run the code, 
 
+1. Download the pretrained models first at https://zenodo.org/record/4778688#.YKe8dKgzaUk
 
+2. Enter a folder ('InferenceNoise_SST2' or 'InferenceNoise_CIFAR10');
+
+3. Run
+
+/InferenceNoise_SST2:
+```train
+python Main.py --EsN0dB <snr you want to try>
+```
+/InferenceNoise_CIFAR10:
+```train
+python Main.py --EsN0dB <snr you want to try> --arch <NN model you want to try: 'resnet34', 'resnet18', or 'shufflenet'>
+```
 
 
 ## Training
