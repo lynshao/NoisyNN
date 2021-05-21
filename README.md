@@ -21,27 +21,31 @@ For noisy inference, we tried three neural network (NN) architectures (ResNet34,
 
 2. Enter a folder ('InferenceNoise_SST2' or 'InferenceNoise_CIFAR10');
 
-3. Run
+3. Run the following
+
+/InferenceNoise_CIFAR10:
+```train
+python Main.py --EsN0dB <snr you want to try> --arch <NN model you want to try: resnet34, resnet18, or shufflenet>
+```
 
 /InferenceNoise_SST2:
 ```train
 python Main.py --EsN0dB <snr you want to try>
 ```
-/InferenceNoise_CIFAR10:
-```train
-python Main.py --EsN0dB <snr you want to try> --arch <NN model you want to try: 'resnet34', 'resnet18', or 'shufflenet'>
-```
+
 
 # Reproduce our results
 
-The source code and data to reproduce our results in Fig.3 are available in the folder 'Reproduce_inference'. Enter the folder and run
+The source code and data to reproduce our results in Fig.3 are available in the folder 'Reproduce_inference'.
+
+Enter the folder and run
 
 ```train
-python plot_figures.py --arch <NN model you want to try: 'resnet34', 'resnet18', or 'shufflenet'>
-e.g.,
-python plot_figures.py --arch resnet34
+python plot_figures.py --arch <NN model you want to try: resnet34, resnet18, shufflenet, or bert>
 
 ```
+> e.g., python plot_figures.py --arch bert
+
 
 ## Training
 
