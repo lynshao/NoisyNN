@@ -70,7 +70,7 @@ python eval.py --model-file mymodel.pth --benchmark imagenet
 
 ## Results
 
-<!-- ![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg) -->
+![image](https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3a.png)
 
 Our model achieves the following performance on :
 
