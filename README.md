@@ -17,9 +17,9 @@ pip install -r requirements.txt
 
 For noisy inference, we tried three neural network (NN) architectures (ResNet34, ResNet18, and ShuffleNet V2) on the CIFAR-10 dataset and one NN architecture (BERT) on the SST-2 dataset. To run the code, 
 
-1. Download the pretrained models first at https://zenodo.org/record/4778688#.YKe8dKgzaUk
+1. Download the pretrained models at https://zenodo.org/record/4778688#.YKe8dKgzaUk
 
-2. Enter a folder ('InferenceNoise_SST2' or 'InferenceNoise_CIFAR10');
+2. Enter a folder ('InferenceNoise_CIFAR10' or 'InferenceNoise_SST2');
 
 3. Run the following
 
@@ -40,7 +40,7 @@ For noisy training, we tried two lightweight NN models (ShuffleNet V2 and ResNet
 
 1. Enter the folder 'TrainingNoise_CIFAR10';
 
-3. Run
+3. Start training (please use at least 2 GPUs)
 
 ```train
 python Main.py --EsN0dB <snr you want to try> --arch <shufflenet or resnet18>
@@ -48,7 +48,7 @@ python Main.py --EsN0dB <snr you want to try> --arch <shufflenet or resnet18>
 
 ## Reproduce our results
 
-The source codes and data to reproduce our results in Fig.3 (noisy inference) are available in the folder 'Reproduce_inference'.
+1. The source codes and data to reproduce our results in Fig.3 (noisy inference) are available in the folder 'Reproduce_inference'.
 
 Enter the folder and run
 
@@ -65,7 +65,7 @@ python plot_figures.py --arch bert
 <img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3c.png" width="450" alt="Fig3c"/>
 <img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3d.png" width="450" alt="Fig3d"/> -->
 
-The source codes and data to reproduce our results in Fig.4 (noisy training) are available in the folder 'Reproduce_Training'.
+2. The source codes and data to reproduce our results in Fig.4 (noisy training) are available in the folder 'Reproduce_Training'.
 
 Enter the folder and run
 
