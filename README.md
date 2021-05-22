@@ -36,13 +36,15 @@ python Main.py --EsN0dB <snr you want to try>
 
 ## Noisy Training
 
-For noisy training, we tried two lightweight NN models (ResNet18 and ShuffleNet V2) on the CIFAR-10 dataset. To run the code, 
+For noisy training, we tried two lightweight NN models (ShuffleNet V2 and ResNet18) on the CIFAR-10 dataset. To run the code, 
+
+1. Enter the folder 'TrainingNoise_CIFAR10';
+
+3. Run
 
 ```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
+python Main.py --EsN0dB <snr you want to try> --arch <shufflenet or resnet18>
 ```
-
-
 
 ## Reproduce our results
 
