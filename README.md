@@ -63,8 +63,13 @@ python plot_figures.py --arch bert
 <img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3c.png" width="450" alt="Fig3c"/>
 <img src="https://github.com/lynshao/NoisyNN/blob/main/Reproduce_inference/Fig3d.png" width="450" alt="Fig3d"/> -->
 
-The source codes and data to reproduce our results in Fig.4 (noisy training) are available in the folder 'Reproduce_inference'.
+The source codes and data to reproduce our results in Fig.4 (noisy training) are available in the folder 'Reproduce_Training'.
 
+Enter the folder and run
+
+```train
+python plot_figures.py --arch <shufflenet or resnet18>
+```
 
 ## Contributing
 
