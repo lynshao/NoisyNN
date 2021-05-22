@@ -71,6 +71,12 @@ Enter the folder and run
 python plot_figures.py --arch <shufflenet or resnet18>
 ```
 
-## Contributing
+## Acknowledgement
 
->📋  Pick a licence and describe how to contribute to your code repository. 
+K. Liu. Train CIFAR-10 with PyTorch. Available online: https://github.com/kuangliu/pytorch-cifar, MIT license, 2020.
+
+Hugging Face. A pretrained BERT model with text attack. Available online: https://huggingface.co/textattack/bert-base-uncased-SST-2, 2021.
+
+Y. Jiang. SST-2 sentiment analysis. Available online: https://github.com/YJiangcm/SST-2-sentiment-analysis, MIT license, 2020.
+
+S. Ji. A PyTorch implementation of federated learning. Available online: https://github.com/shaoxiongji/federated-learning, MIT license, 2018.
