@@ -1,0 +1,8 @@
+torch==1.8.1
+pandas==1.2.3
+transformers==4.4.2
+scipy==1.6.0
+torchvision==0.8.2
+matplotlib==3.3.3
+numpy==1.19.2
+seaborn==0.11.1
