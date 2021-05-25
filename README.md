@@ -1,9 +1,20 @@
 # Denoising Noisy Neural Networks: A Bayesian Approach with Compensation
 
-This repository is the official implementation of paper [Denoising Noisy Neural Networks: A Bayesian Approach with Compensation].
-<!-- (add arXiv link) -->
+This repository is the official implementation of paper [Denoising Noisy Neural Networks: A Bayesian Approach with Compensation] (https://arxiv.org/abs/2105.10699).
 
-<!-- >📋  Optional: If you find this repository useful, pls cite as include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials -->
+> If you find this repository useful, please kindly cite as
+> 
+> @article{ShaoNoisyNN,
+> 
+> title={Denoising Noisy Neural Networks: A Bayesian Approach with Compensation},
+> 
+> author={Shao, Yulin and Liew, Soung Chang and Gunduz, Deniz},
+> 
+> journal={arXiv preprint:2105.10699, available online at \url{https://arxiv.org/abs/2105.10699}},
+> 
+> year={2021}
+> 
+> }
 
 ## Requirements
 
